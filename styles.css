@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+/* heading: rale */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+  /* font-family: 'Montserrat' */
+}
+body{
+  background: hsl(217, 28%, 15%);
+  color: #FFF;
+}
+h1,h2,h3,h4{
+  font-family: 'Raleway';
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+header .logo{
+  width: 130px;
+}
+header .logo img{
+  width: 100%;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+}
+nav a{
+  text-decoration: none;
+  color: #FFF;
+  padding: 0 20px;
+  font-size: 0.9rem;
+}
+#illustration button{
+  background: linear-gradient(to right, hsl(176, 68%, 64%),hsl(198, 60%, 50%));
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  background: '';
+  color: #FFF;
+  font-size: 0.8rem;
+
+}
+.illustration-intro{
+  width: 400px;
+  margin: 10px auto;
+  color: #FFF;
+  /* text-align: center; */
+}
+.illustration-intro img{
+  width: 100%;
+}
+.illustration h1{
+  text-align: center;
+}
+.illustration-curve{
+  background-image: url(images/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.files{
+  padding-bottom: 20px;
+}
+.files h1{
+  margin: 10px auto;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 500px;
+  line-height: 2rem;
+}
+.files p{
+  margin: 10px auto;
+  text-align: center;
+  font-size: 0.9rem;
+  width: 470px;
+  line-height: 1.5rem;
+}
+#services{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  padding: 100px;
+  text-align: center;
+}
+#services img{
+  width: 60px;
+}
+#services h3{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 5px 0;
+}
+#services p{
+  text-align: center;
+  font-size: 0.8rem;
+}
+#production{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 50px 100px 50px;
+}
+.production_image{
+  width: 800px;
+}
+.production_image img{
+  width: 100%;
+}
+.production_text{
+  padding: 0 20px;
+}
+.production_text h1{
+  font-size: 1.5rem;
+  width: 300px;
+}
+.production_text p{
+  font-size: 1rem;
+  padding: 10px 0;
+  font-size: 0.8rem;
+}
+.production_link{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+  padding-bottom: 3px;
+  width: 165px;
+}
+.production_link a{
+  text-decoration: none;
+  color: hsl(176, 68%, 64%);
+  font-size: 0.9rem;
+}
+#testimonial{
+padding-bottom: 200px;
+}
+.quote img{
+  margin: 0 30px;
+  width: 40px;
+}
+.card-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 40px;
+  margin: 20px 50px;
+}
+.card{
+  background: hsl(217, 28%, 15%);
+  box-shadow: 2px 2px 4px hsl(219, 30%, 18%);
+  padding: 20px;
+}
+.card p{
+  font-size: 0.8rem;
+}
+.avatar{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.avatar img{
+  width: 30px;
+  border-radius: 50px;
+}
+.author h4,
+.author p{
+  font-size: 0.75rem;
+}
+footer{
+  padding: 200px 100px;
+}
+footer p{
+  font-size: 0.8rem;
+  padding: 10px 0;
+}
+footer ul{
+  list-style: none;
+  padding: 0 20px;
+}
+footer ul a{
+  text-decoration: none;
+  color: #FFF;
+}
+footer .logo{
+  width: 130px;
+}
+footer .logo img{
+  width: 100%;
+}
+.footer-text{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.footer-text img{
+  font-size: 30px;
+}
+.location p{
+  width: 300px;
+
+}
+.location img{
+  align-self: flex-start;
+  padding: 0 10px;
+}
+.location,
+.phone div{
+  display: flex;
+  padding: 10px;
+}
+.phone div p{
+  padding: 0 10px;
+}
