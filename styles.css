@@ -20,9 +20,9 @@ header{
   align-items: center;
   padding: 40px;
 }
-header .logo{
+/* header .logo{
   width: 130px;
-}
+} */
 header .logo img{
   width: 100%;
 }
@@ -35,6 +35,9 @@ nav a{
   color: #FFF;
   padding: 0 20px;
   font-size: 0.9rem;
+}
+#illustration{
+ width: 100%;
 }
 #illustration button{
   background: linear-gradient(to right, hsl(176, 68%, 64%),hsl(198, 60%, 50%));
@@ -50,10 +53,9 @@ nav a{
 
 }
 .illustration-intro{
-  width: 400px;
-  margin: 10px auto;
   color: #FFF;
-  /* text-align: center; */
+  width: 500px;
+  margin: 20px auto;
 }
 .illustration-intro img{
   width: 100%;
@@ -86,13 +88,13 @@ nav a{
 }
 #services{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
   padding: 100px;
   text-align: center;
 }
 #services img{
-  width: 60px;
+  width: 100px;
 }
 #services h3{
   text-align: center;
@@ -108,12 +110,10 @@ nav a{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 50px 100px 50px;
-}
-.production_image{
-  width: 800px;
+  padding: 40px 40px 100px 40px;
 }
 .production_image img{
+  padding: 0 20px;
   width: 100%;
 }
 .production_text{
@@ -149,7 +149,7 @@ padding-bottom: 200px;
 }
 .card-wrapper{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 40px;
   margin: 20px 50px;
 }
@@ -157,6 +157,7 @@ padding-bottom: 200px;
   background: hsl(217, 28%, 15%);
   box-shadow: 2px 2px 4px hsl(219, 30%, 18%);
   padding: 20px;
+  margin: 20px 0;
 }
 .card p{
   font-size: 0.8rem;
@@ -175,7 +176,10 @@ padding-bottom: 200px;
   font-size: 0.75rem;
 }
 footer{
-  padding: 200px 100px;
+  background: hsl(216, 53%, 9%);
+  padding: 200px 50px;
+  position: relative;
+  width: 100%;
 }
 footer p{
   font-size: 0.8rem;
@@ -189,11 +193,11 @@ footer ul a{
   text-decoration: none;
   color: #FFF;
 }
-footer .logo{
+/* footer .logo{
   width: 130px;
-}
+} */
 footer .logo img{
-  width: 100%;
+  width: 200px;
 }
 .footer-text{
   display: flex;
@@ -205,7 +209,7 @@ footer .logo img{
   font-size: 30px;
 }
 .location p{
-  width: 300px;
+  max-width: 300px;
 
 }
 .location img{
@@ -220,3 +224,71 @@ footer .logo img{
 .phone div p{
   padding: 0 10px;
 }
+.social{
+  display: flex;
+  filter: invert(1);
+}
+.social img{
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 5px
+}
+.get-access{
+  width: 600px;
+  margin: 20px auto;
+  position: absolute;
+  top: -20%;
+  background: hsl(217, 28%, 15%);
+  text-align: center;
+  padding: 20px;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.4);
+}
+.get-access h1{
+  font-size: 1.5rem;
+}
+.get-access p{
+  margin: 20px auto;
+  width: 500px;
+}
+.get-access form{
+  display: flex;
+  padding: 0 20px;
+}
+.get-access input,
+.get-access button{
+  background: linear-gradient(to right, hsl(176, 68%, 64%),hsl(198, 60%, 50%));
+  margin: 0 10px;
+  width: 200px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  color: #FFF;
+  font-size: 0.8rem;
+}
+.get-access input{
+  width: 400px;
+  background: #FFF;
+  color: #000;
+}
+
+ /* responsive */
+ @media (max-width: 900px){
+   .card-wrapper,
+   #services{
+     grid-template-columns: 1fr;
+   }
+   #production,
+   .footer-text{
+     display: block;
+   }
+   footer ul{
+     margin: 20px 0;
+   }
+   .social{
+     width: 150px;
+     margin: 10px auto;
+   }
+ }
