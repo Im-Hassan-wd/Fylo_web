@@ -140,9 +140,12 @@ nav a {
   color: hsl(176, 68%, 64%);
   font-size: 0.9rem;
 }
-.production_link a:hover{
+.production_link:hover{
   color: #999;
   border-bottom: 1px solid #999;
+}
+.production_link a:hover{
+  color: #999;
 }
 .quote img {
   margin: 0 30px;
