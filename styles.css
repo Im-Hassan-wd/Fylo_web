@@ -5,19 +5,18 @@
   padding: 0;
   box-sizing: border-box;
   /* font-family: "Open Sans"; */
-  font-family: 'Montserrat'
+  font-family: "Montserrat";
 }
 body {
   background: hsl(217, 28%, 15%);
   color: #fff;
-  width: !
 }
 h1,
 h2,
 h3,
 h4 {
   font-family: "Raleway";
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 header {
   display: flex;
@@ -41,7 +40,7 @@ nav a {
   padding: 0 20px;
   font-size: 0.9rem;
 }
-#illustration-curve{
+#illustration-curve {
   background: url(images/bg-curvy-mobile.svg);
   background-position: top;
   background-repeat: no-repeat;
@@ -80,6 +79,11 @@ nav a {
   background: "";
   color: #fff;
   font-size: 0.8rem;
+  cursor: pointer;
+}
+#illustration button:hover{
+  cursor: pointer;
+  background: linear-gradient(to right, hsl(198, 60%, 50%), hsl(176, 68%, 64%));
 }
 #services {
   display: grid;
@@ -107,7 +111,8 @@ nav a {
   align-items: center;
   padding: 40px 40px 100px 40px;
 }
-.production_image img {
+.production_image img,
+.production_image svg {
   padding: 0 20px;
   width: 100%;
 }
@@ -135,6 +140,10 @@ nav a {
   color: hsl(176, 68%, 64%);
   font-size: 0.9rem;
 }
+.production_link a:hover{
+  color: #999;
+  border-bottom: 1px solid #999;
+}
 .quote img {
   margin: 0 30px;
   width: 40px;
@@ -144,7 +153,7 @@ nav a {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 40px;
   padding: 20px;
-  width: 100%
+  width: 100%;
 }
 .card {
   width: 100%;
@@ -172,7 +181,7 @@ nav a {
 }
 footer {
   background: hsl(216, 53%, 9%);
-  padding: 200px 50px;
+  padding: 200px 50px 0 50px;
   width: 100%;
 }
 footer p {
@@ -181,11 +190,17 @@ footer p {
 }
 footer ul {
   list-style: none;
-  padding: 0 20px;
+  padding: 20px;
+}
+footer li{
+  padding: 10px 0;
 }
 footer ul a {
   text-decoration: none;
-  color: #fff;
+  color: #999;
+}
+footer ul a:hover{
+  color: #FFF;
 }
 footer .logo img {
   width: 200px;
@@ -216,15 +231,20 @@ footer .logo img {
 }
 .social {
   display: flex;
-  filter: invert(1);
 }
-.social img {
+.social svg {
   width: 30px;
   height: 30px;
-  border: 1px solid #000;
+  border: 1px solid #FFF;
   border-radius: 50%;
-  margin: 0 5px;
+  margin: 20px 10px;
   padding: 5px;
+  cursor: pointer;
+  transition: 0.4s all ease-in-out;
+}
+.social svg:hover {
+  color: hsl(176, 68%, 64%);
+  border: 1px solid hsl(176, 68%, 64%);
 }
 .get-access {
   width: 100%;
@@ -259,6 +279,11 @@ footer .logo img {
   padding: 10px;
   color: #fff;
   font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.4s all ease-in-out;
+}
+.get-access button:hover{
+  background: linear-gradient(to right, hsl(198, 60%, 50%), hsl(176, 68%, 64%));
 }
 .get-access input {
   background: #fff;
@@ -288,10 +313,10 @@ footer .logo img {
   header {
     padding: 40px 5px;
   }
-  header .logo{
+  header .logo {
     width: 100px;
   }
-  .get-access form{
+  .get-access form {
     grid-template-columns: 1fr;
   }
 }
